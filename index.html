@@ -19,7 +19,7 @@
         const Webapp = JSON.stringify(window.Telegram.WebApp);
         document.getElementById("m").innerHTML = Webapp;
         document.getElementById("m1").innerHTML = JSON.stringify(Webapp.initDataUnsafe.id);
-        document.getElementById("m2").innerHTML = Webapp.initData.id;
+        document.getElementById("m2").innerHTML = Webapp.initData.user;
         document.getElementById("m3").innerHTML = Webapp.initDataUnsafe.User;
         document.getElementById("m4").innerHTML = Webapp.initDataUnsafe.User.id;
         console.log(window.Telegram.WebApp)</script>
