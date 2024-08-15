@@ -23,8 +23,8 @@ text-wrap:true}
         const Webapp = JSON.stringify(window.Telegram.WebApp);
         document.getElementById("m").innerHTML = Webapp;
         document.getElementById("m1").innerHTML = JSON.stringify(window.Telegram.WebApp.initData);
-        document.getElementById("m2").innerHTML = Webapp.initData.user;
-        document.getElementById("m3").innerHTML = Webapp.initDataUnsafe;
+        document.getElementById("m2").innerHTML = JSON.stringify(window.Telegram.WebApp.initData.user);
+        document.getElementById("m3").innerHTML = JSON.stringify(window.Telegram.WebApp.initData.user.first_name);;
         document.getElementById("m4").innerHTML = Webapp.initDataUnsafe.User.id;
         console.log(window.Telegram.WebApp)</script>
 
