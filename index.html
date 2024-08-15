@@ -15,11 +15,12 @@
     <h2 id="m3"></h2>
     <h2 id="m4"></h2>
     <script>
-        document.getElementById("m").innerHTML = JSON.stringify(window.Telegram.WebApp);
-        document.getElementById("m1").innerHTML = window.Telegram.WebApp.initDataUnsafe.id;
-        document.getElementById("m2").innerHTML = window.Telegram.WebApp.initData.id;
-        document.getElementById("m3").innerHTML = WebApp.initDataUnsafe.User;
-        document.getElementById("m4").innerHTML = window.Telegram.WebApp.initDataUnsafe.User.id;
+        const Webapp = JSON.stringify(window.Telegram.WebApp);
+        document.getElementById("m").innerHTML = Webapp.user;
+        document.getElementById("m1").innerHTML = Webapp.initDataUnsafe.id;
+        document.getElementById("m2").innerHTML = Webapp.initData.id;
+        document.getElementById("m3").innerHTML = Webapp.initDataUnsafe.User;
+        document.getElementById("m4").innerHTML = Webapp.initDataUnsafe.User.id;
         console.log(window.Telegram.WebApp)</script>
 
 
