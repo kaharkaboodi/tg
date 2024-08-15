@@ -12,10 +12,14 @@
     <h2 id="m"></h2>
     <h2 id="m1"></h2>
     <h2 id="m2"></h2>
+    <h2 id="m3"></h2>
+    <h2 id="m4"></h2>
     <script>
         document.getElementById("m").innerHTML = window.Telegram.WebApp;
         document.getElementById("m1").innerHTML = window.Telegram.WebApp.initDataUnsafe.id;
         document.getElementById("m2").innerHTML = window.Telegram.WebApp.initData.id;
+        document.getElementById("m3").innerHTML = WebApp.initDataUnsafe.User;
+        document.getElementById("m4").innerHTML = WebApp.initDataUnsafe.User.id;
         console.log(window.Telegram.WebApp)</script>
 
 
