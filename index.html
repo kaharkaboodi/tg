@@ -10,13 +10,14 @@
 <body>
     <h1>v5</h1>
     <h2 id="m"></h2>
+    <p>kkk</p>
     <h2 id="m1"></h2>
     <h2 id="m2"></h2>
     <h2 id="m3"></h2>
     <h2 id="m4"></h2>
     <script>
         const Webapp = JSON.stringify(window.Telegram.WebApp);
-        document.getElementById("m").innerHTML = JSON.stringify(Webapp.user);
+        document.getElementById("m").innerHTML = Webapp;
         document.getElementById("m1").innerHTML = JSON.stringify(Webapp.initDataUnsafe.id);
         document.getElementById("m2").innerHTML = Webapp.initData.id;
         document.getElementById("m3").innerHTML = Webapp.initDataUnsafe.User;
