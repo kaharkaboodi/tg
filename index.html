@@ -15,7 +15,7 @@
     <h2 id="m3"></h2>
     <h2 id="m4"></h2>
     <script>
-        document.getElementById("m").innerHTML = window.Telegram.WebApp;
+        document.getElementById("m").innerHTML = JSON.stringify(window.Telegram.WebApp);
         document.getElementById("m1").innerHTML = window.Telegram.WebApp.initDataUnsafe.id;
         document.getElementById("m2").innerHTML = window.Telegram.WebApp.initData.id;
         document.getElementById("m3").innerHTML = WebApp.initDataUnsafe.User;
