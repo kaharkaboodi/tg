@@ -26,7 +26,7 @@ text-wrap:true}
         document.getElementById("m1").innerHTML = JSON.stringify(window.Telegram.WebApp.initData);
         document.getElementById("m2").innerHTML = JSON.stringify(window.Telegram.WebApp.initData.user);
         document.getElementById("m3").innerHTML = JSON.stringify(window.Telegram.WebApp.initData.user=first_name);;
-        document.getElementById("m4").innerHTML = JSON.parse(Webapp);
+        document.getElementById("m4").innerHTML = JSON.parse(JSON.stringify(window.Telegram.WebApp.initData.user));
         console.log(window.Telegram.WebApp)</script>
 
 
